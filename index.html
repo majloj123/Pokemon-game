@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pokémon hra pre deti</title>
+  </head>
+  <body>
+    <main class="dashboard">
+      <section class="player player--0 player--active">
+        <h2 class="name ash" id="name--0">Tréner 1</h2>
+        <p class="score" id="score--0">43</p>
+        <img class="trainer" src="ash.png" alt="player1">
+        <div class="current">
+          <p class="current-label">Poškodenie</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <h2 class="name misty" id="name--1">Tréner 2</h2>
+        <p class="score" id="score--1">24</p>
+        <img class="trainer" src="misty.png" alt="player2">
+        <div class="current">
+          <p class="current-label">Poškodenie</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <img src="pokemon-5.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--new">💗 Nová hra</button>
+      <button class="btn btn--roll">🍚 Pokeball!</button>
+      <button class="btn btn--hold">💣 Útok!</button>
+      <p class="dmg">-50</p>
+    </main>
+    <button class="btn rules">📗 Pravidlá hry</button>
+
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1>📗 Pravidlá Pokemon súbojov</h1>
+      <p>
+        V tejto hre sa proti sebe postavia dvaja tréneri pokémonov, ktorích cieľom bude poraziť svojho súpera. 
+      </p>
+      <p>
+        Máš k dispozícii <strong>pokéball</strong>, ktorý keď hodíš, výjde z neho jeden zo 6 pokémonov (Každý pokémon zaútočí rozdielnou silou na druhého hráča).<br>V prípade, že hráč stratí všetku svoju výdrž, automaticky <strong>prehráva!!</strong>.
+      <p>
+      <p class="modal--highlight">Pokémoni:</p>
+      <ul>
+        <li><img src="pokemon-1.png" alt="pokemon 1"><p><strong>Snorlax:</strong>Tento pokémon je lenivý, vôbec neútočí a tak dá priestor druhému hráčovi, aby začal hádzať Pokeball on</p> </li>
+        <li><img src="pokemon-2.png" alt="pokemon 2"><p><strong>Bulbasaur:</strong>Tento pokémon dokáže ubrať 2 body výdrže oponentovi.</p> </li>
+        <li><img src="pokemon-3.png" alt="pokemon 3"><p><strong>Pikachu:</strong>Tento pokémon dokáže ubrať 3 body výdrže oponentovi.</p> </li>
+        <li><img src="pokemon-4.png" alt="pokemon 4"><p><strong>Haunter:</strong>Tento pokémon dokáže ubrať 4 body výdrže oponentovi.</p> </li>
+        <li><img src="pokemon-5.png" alt="pokemon 5"><p><strong>Blastoise:</strong>Tento pokémon dokáže ubrať 5 body výdrže oponentovi.</p> </li>
+        <li><img src="pokemon-6.png" alt="pokemon 6"><p><strong>Charizard:</strong>Tento pokémon dokáže ubrať 6 body výdrže oponentovi.</p> </li>
+      </ul>
+      <p class="modal--highlight">Herné tlačidlá:</p>
+      <ul>
+        <li><p><strong>💗 Nová hra:</strong> Pri kliknutí na túto ikonu začne celá hra nanovo.</p></li>
+        <li><p><strong>🍚 Pokeball!:</strong> Pri kliknutí na túto ikonu hráč hodí pokéball a uvidí, ktorý pokémon bol privolaný bojovať do arény.</p></li>
+        <li><p><strong>💣 Útok!:</strong> Pri kliknutí na túto ikonu prikáže tréner všetkým svojím pokémonom aby zaútočili na druhého hráča, čím mu spôsobí poškodenie (súčet "Poškodenie" pod avatarom trénera).</p></li>
+      </ul>
+      <p class="modal--highlight">Postup hry v skratke:</p>
+      <p>Prehráva ten hráč, ktorý príde o svoju výdrž ako prvý. Dávaj si pozor, koľko "Pokéballov" hodíš do arény! V prípade, že sa do arény dostane Snorlax (lenivý pokémon), protihráč sa dostane na rad a tvoji pokémoni nebudú môcť zaútočiť. Všetko poškodenie, ktoré si od privolaných pokémonov nazbieral bude vynulované!</p>
+    </div>
+    <div class="overlay hidden"></div>
+    <!--<a href='https://www.freepik.com/vectors/background'>Background vector created by upklyak - www.freepik.com</a> -->
+    <script src="script.js"></script>
+  </body>
+</html>
