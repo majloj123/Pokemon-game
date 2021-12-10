@@ -15,7 +15,7 @@ body {
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
   height: 100vh;
-  color: #333;
+  color: rgb(238, 63, 63);
   background-image: url(./background.jpg);
   background-size: 100%;
   /*background-image: linear-gradient(to top left, #363b82 0%, #659dc2 100%);*/
@@ -203,7 +203,7 @@ main {
 .rules {
   position: absolute;
   left: 50%;
-  top: 80rem;
+  top: 10rem;
   transform: translateX(-50%);
 }
 
@@ -251,6 +251,7 @@ main {
   width: 40%;
   height: 80%;
   font-size: 2rem;
+  color: black;
   background-color: white;
   padding: 6rem;
   border-radius: 5px;
